@@ -22,3 +22,12 @@ export type TPost = {
   comments: number;
   link: string;
 };
+
+export type TStatistics = {
+  total_views: number;
+  total_likes: number;
+  total_comments: number;
+  most_viewed: TPost;
+  most_liked: TPost;
+  most_commented: TPost;
+};
