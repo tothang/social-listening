@@ -18,9 +18,11 @@ const Card: React.FC<{ result: TPost; source: string }> = ({
         />
       </div>
       <div className="card-content">
-        <h2 className="text-body font-semibold underline cursor-pointer">
-          {result.title}
-        </h2>
+        <a href={result.link} target="_blank">
+          <h2 className="text-body font-semibold underline cursor-pointer">
+            {result.title}
+          </h2>
+        </a>
         <div className="flex flex-col justify-baseline items-start">
           <div className="flex gap-2">
             <strong>Channel:</strong>
